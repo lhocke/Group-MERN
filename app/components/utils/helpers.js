@@ -33,7 +33,7 @@ var helper = {
       console.log(data.headline.main)
       console.log(data.web_url)
       return axios.post("/api/saved")
-    }
+    },
 
     getSaved: function() {
       return axios.get("/api/saved")

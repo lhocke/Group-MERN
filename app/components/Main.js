@@ -53,7 +53,7 @@ var Main = react.createClass({
     });
   },
   handleSubmit: function(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     helpers.runQuery(
     this.state.searchterm,
     this.state.numResults,

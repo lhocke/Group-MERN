@@ -1,7 +1,7 @@
 var React = require("react");
 var helpers = require ("../utils/helpers");
 
-var Saved = React.createClass {
+var Saved = React.createClass ({
           return = {saved: []}
     }
     render: function() {
@@ -18,5 +18,5 @@ var Saved = React.createClass {
         </div>
         );
     }
-}
+});
 module.exports = Saved;

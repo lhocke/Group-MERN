@@ -1,7 +1,7 @@
 // Include the axios package for performing HTTP requests (promise based alternative to request)
 var axios = require("axios");
 // NYT API, fill in credentials here
-var timesKey = "6c20f8917d9c430480edd0748c722e25";
+var timesKey = "049b820e0acb40e58c6ecbd316c73ea6";
 var queryBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key= " + nytAPI + "&q=";
 
 var helper = {
@@ -44,7 +44,7 @@ var helper = {
     }
   }
 
-  module.exports = helper
+module.exports = helper
 
   //   // Figure out the geolocation
   //   var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key= " + nytAPI + "&q=";

@@ -1,17 +1,24 @@
 var mongoose = require("mongoose");
-var Schema = mongoose.Schema;
+var schema = mongoose.Schema;
 
-var ArticleSchema = new Schema({
-  title: {
-    type: String
-  },
-  date: {
-    type: Date
-  },
-  url: {
-    type: String
-  },
+// create our schema for mongo db
+var articleSchema = new Schema ({
+
+	title: {
+		type: String,
+		required: true
+	},
+	date: {
+		type: Date,
+		required: true
+	},
+	url: {
+		type: String,
+		required: true
+	}
+
 });
 
-var Article = mongoose.model("Article", ArticleSchema);
-module.exports = Article;
+var Article = mongoose.model("Article", articleSchema);
+
+// Export the Article model

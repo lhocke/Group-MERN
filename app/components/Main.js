@@ -66,7 +66,11 @@ var Main = react.createClass({
   },
   handleReset: function() {
     $('#well-section').empty()
-  }
+  },
+  saveArticle: function(article) {
+    console.log("clicked")
+    helpers.savePost(article).then(console.log("saved"))
+  },
   render: function() {
     return (
       <div className="container">
@@ -115,7 +119,7 @@ var Main = react.createClass({
             </div>
           </div>
         </div>
-        <Search />
+        <Search saveArticle={this.saveArticle} />
         <Saved />
       </div>
     )

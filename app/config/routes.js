@@ -3,7 +3,7 @@ var router = express.Router();
 var Article = require('../models/Article');
 //render the index.html file when this route is hit
 router.get('/', function(req,res) {
-    res.sendFile(path.join(__dirname, '../public', 'index.html');
+    res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 //this will get all the saved articles from the db
 router.get('/api/saved', function(req,res) {

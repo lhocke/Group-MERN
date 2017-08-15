@@ -1,14 +1,23 @@
 {
-  "name": "group-mern",
+  "name": "NYT-React",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "NYT-React",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Dylan Ishihara",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalexanderlee/NYT-React.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalexanderlee/NYT-React/issues"
+  },
+  "homepage": "https://github.com/aalexanderlee/NYT-React#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.17.2",
